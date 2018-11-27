@@ -1,0 +1,112 @@
+#include <iostream>
+using namespace std;
+int n = 0;
+int f = 0;
+int cont = 0;
+int p = 0;
+int t = 0;
+void oi0() {int N[81]={};
+    int r = 10;
+    int j = 0;
+    for (int k = 0; k < 81; k++) {
+
+            r = rand();
+            r = r%2 ;
+            if (r == 1){
+            r = rand();
+            r = r %9+1;}
+            else{
+                r = 0;
+            }
+            if (f == 2){
+                r = 0;}
+            N[k] = r;
+            if (k == 3 or k == 6 or k == 12 or k == 15 or k == 21 or k == 24 or k == 30 or k == 33 or k == 39 or k == 42 or k == 48 or k == 51 or k == 57 or k == 60 or k == 66 or k == 69 or k == 75 or k == 78){
+                cout << "|";
+                cout << N[k] << " ";
+            }
+            else{
+                cout << N[k] << " ";}
+
+            if (k == 8 or k == 17 or k == 26 or k == 35 or k == 44 or k == 53 or k == 62 or k == 71)
+                cout << endl;
+            if (k == 26 or k == 53){
+                cout << "-------------------";
+                cout << endl;
+            }}
+        }
+
+    void oi1() {int N[36]={};
+        int r = 10;
+        int j = 0;
+        for (int k = 0; k < 36; k++) {
+                r = rand();
+                r = r%2 ;
+                if (r == 1){
+                    r = rand();
+                    r = r %9+1;}
+                else{
+                    r = 0;
+                }
+                if (f == 2){
+                    r = 0;}
+                N[k] = r;
+                if (k == 3 or k == 9 or k == 15 or k == 21 or k == 27 or k == 33){
+                    cout << "|";
+                    cout << N[k] << " ";
+                }
+                else{
+                    cout << N[k] << " ";}
+
+            if (k == 5 or k == 11 or k == 17 or k == 23 or k == 29)
+            cout << endl;
+            if (k == 17){
+                cout << "-------------";
+                cout << endl;
+            }}
+        for (int l = 0; l < 36; l++) {
+            cout << '\n' << '\n' << '\n' << '\n' << '\n' << '\n' << '\n' << '\n' << '\n';
+
+            for (int k = 0; k < 36; k++) {
+                if (k == 3 or k == 9 or k == 15 or k == 21 or k == 27 or k == 33){
+                    cout << "|";
+                    cout << N[k] << " ";
+                }
+                else{
+                    cout << N[k] << " ";}
+
+                if (k == 5 or k == 11 or k == 17 or k == 23 or k == 29)
+                    cout << endl;
+                if (k == 17){
+                    cout << "-------------";
+                    cout << endl;
+                }}
+cout << '\n' << '\n'<< '\n'<< '\n';
+        cout <<'\n' << "Elije un espacio para rellenar que tenga un '0' dentro, Use el numero del arreglo (Escriba '36' cuando desee terminar)" << endl;
+        cin >> l;
+        cout << "Ahora elija un valor que quiera ingresar" << endl;
+            cin >> t;
+            if (t > 9){
+                cout << "numero invalido , porfavor ingrese un numero del 1-9" << endl;
+                cin >> t;
+            }
+            N[l] = t;
+        }}
+
+
+int main(){
+    cout << "------------------------Menu------------------------" << '\n' << "1. Modo 3x3" << '\n' << "2. Modo 2x2" << endl;
+
+    cin >> n;
+
+    cout << "------------------------Opciones------------------------" << '\n' << "1. Llenar algunas celdas" << '\n' << "2. Vaciar todo" << endl;
+
+    cin >> f;
+
+    if (n == 1){
+    oi0();
+
+    }
+    else if (n == 2){
+        oi1();}
+}
