@@ -34,6 +34,33 @@ void oi0() {int N[81]={};
                 cout << "-------------------";
                 cout << endl;
             }}
+    for (int l = 0; l < 81; l++) {
+        cout << '\n' << '\n' << '\n' << '\n' << '\n' << '\n' << '\n' << '\n' << '\n';
+
+        for (int k = 0; k < 81; k++) {
+            if (k == 3 or k == 6 or k == 12 or k == 15 or k == 21 or k == 24 or k == 30 or k == 33 or k == 39 or k == 42 or k == 48 or k == 51 or k == 57 or k == 60 or k == 66 or k == 69 or k == 75 or k == 78){
+                cout << "|";
+                cout << N[k] << " ";
+            }
+            else{
+                cout << N[k] << " ";}
+
+            if (k == 8 or k == 17 or k == 26 or k == 35 or k == 44 or k == 53 or k == 62 or k == 71)
+                cout << endl;
+            if (k == 26 or k == 53){
+                cout << "-------------------";
+                cout << endl;
+            }}
+        cout <<'\n' << "Elije un espacio para rellenar que tenga un '0' dentro, Use el numero del arreglo (Escriba '36' cuando desee terminar)" << endl;
+        cin >> l;
+        cout << "Ahora elija un valor que quiera ingresar" << endl;
+        cin >> t;
+        if (t > 9){
+            cout << "numero invalido , porfavor ingrese un numero del 1-9" << endl;
+            cin >> t;
+        }
+        N[l] = t;
+    }
         }
 
     void oi1() {int N[36]={};
@@ -110,3 +137,4 @@ int main(){
     else if (n == 2){
         oi1();}
 }
+
