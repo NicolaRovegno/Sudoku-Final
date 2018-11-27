@@ -51,7 +51,7 @@ void oi0() {int N[81]={};
                 cout << "-------------------";
                 cout << endl;
             }}
-        cout <<'\n' << "Elije un espacio para rellenar que tenga un '0' dentro, Use el numero del arreglo (Escriba '36' cuando desee terminar)" << endl;
+        cout <<'\n' << "Elije un espacio para rellenar que tenga un '0' dentro, Use el numero del arreglo (Escriba '81' cuando desee terminar)" << endl;
         cin >> l;
         cout << "Ahora elija un valor que quiera ingresar" << endl;
         cin >> t;
